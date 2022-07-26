@@ -1,0 +1,289 @@
+const bth = document.querySelector('.icon');
+
+document.querySelectorAll('.burger-btn-active').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.querySelector('.burger-menu').classList.toggle('not-active')
+    });
+});
+
+const search = document.querySelector('.search');
+const body = document.querySelector('body');
+const cross = document.querySelector('.cross');
+
+bth.addEventListener('click', function() {
+    search.classList.add("se--active");
+});
+cross.addEventListener('click', function(el) {
+    search.classList.remove("se--active");
+});
+
+/*select */
+const defaultSelect = () => {
+    const element = document.querySelector('.select');
+    const choices = new Choices(element, {
+        searchEnabled: false
+    });
+}
+defaultSelect();
+const elements = document.querySelectorAll('.selectr');
+const elementG = document.querySelectorAll('.gallery__select');
+elements.forEach(el => {
+    const choices = new Choices(el, {
+        searchEnabled: false
+
+    });
+
+});
+elementG.forEach(el => {
+    const choices = new Choices(el, {
+        searchEnabled: false
+    });
+
+
+
+});
+/*const GallerySelect = () => {
+    const elementG = document.querySelector('.gallery__select');
+    const choices = new Choices(elementG, {
+        searchEnabled: false
+    });
+}
+defaultSelect();
+elements.forEach(el => {
+    const choices = new Choices(el, {
+        searchEnabled: false
+    });
+
+});
+elementG.forEach(el => {
+    const choices = new Choices(el, {
+        searchEnabled: false
+    });
+
+});*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+ymaps.ready(init);
+
+function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+        center: [55.758468, 37.601088],
+        zoom: 14
+    });
+
+    var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/card.svg',
+        iconImageSize: [20, 20],
+        iconImageOffset: [-3, -42]
+    });
+    myMap.geoObjects.add(myPlacemark);
+
+}
+
+
+(() => {
+    new Accordion(".js-accordion-container", {
+        openOnInit: [0]
+    });
+})();
+
+/*ТАБЫ*/
+document.querySelectorAll('.tabs-nav__bth').forEach(function(tabsBtn) {
+    tabsBtn.addEventListener('click', function(e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.tabs-nav__bth').forEach(function(btn) {
+            btn.classList.remove('tabs-nav__bth-first')
+        });
+        e.currentTarget.classList.add('tabs-nav__bth-first');
+        document.querySelectorAll('.tabs-item').forEach(function(tabsBtn) {
+            tabsBtn.classList.remove('tabs-item--active')
+            tabsBtn.classList.remove('tabs-item--activee')
+        });
+        document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--activee');
+        tabsBtn.classList.remove('tabs-item--active')
+    });
+});
+
+/*hero */
+const swiper = new Swiper('.hero__section-images', {
+
+    direction: 'vertical',
+    loop: true,
+    direction: 'horizontal',
+    autoplay: true,
+    speed: 2200,
+    allowTouchMove: false,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    uniqueNavElements: false,
+})
+
+/*Свайпер Проекты*/
+
+var swiperP = new Swiper(".mySwiperP", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 21,
+            slidesPerGroup: 1
+        },
+        560: {
+            slidesPerView: 2,
+            spaceBetween: 33,
+            slidesPerGroup: 2
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            slidesPerGroup: 2
+        },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+
+        }
+    }
+});
+
+
+
+/*Свайпер События */
+var swiperE = new Swiper(".mySwiperE", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        }
+
+    }
+
+});
+/*Свайпер Галерея */
+var swiperG = new Swiper(".mySwiperG", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction"
+    },
+    loop: true,
+    slidesPerGroup: 3,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+        },
+        561: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+            slidesPerGroup: 2,
+        },
+        319: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 0,
+        }
+    }
+});
+
+
+
+
+
+const validation = new JustValidate('.contacts__form');
+
+new JustValidate('.contacts__form', {
+    rules: {
+        name: {
+            required: true,
+            minLength: 2,
+            maxLength: 10
+        },
+        tel: {
+            required: true,
+
+        },
+    },
+    messages: {
+        name: {
+            required: 'Вы не ввели имя',
+            minLength: 'Введите 2 и более символов',
+            maxLength: 'Запрещено вводить более 10 символов'
+        },
+
+        tel: {
+            required: 'Вы не ввели телефон',
+            function: 'Здесь должно быть 10 символов без +7'
+        }
+    }
+});
+/*modal*/
+const btns = document.querySelectorAll('.gallery__slid');
+const modalOverlay = document.querySelector('.modal-overlay');
+const modals = document.querySelectorAll('.modal');
+
+btns.forEach((el) => {
+    el.addEventListener('click', (e) => {
+        let path = e.currentTarget.getAttribute('data-path');
+
+        modals.forEach((el) => {
+            el.classList.remove('modal--visible');
+        });
+
+        document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+        modalOverlay.classList.add('modal-overlay--visible');
+    });
+});
+
+modalOverlay.addEventListener('click', (e) => {
+    console.log(e.target);
+
+    if (e.target == modalOverlay) {
+        modalOverlay.classList.remove('modal-overlay--visible');
+        modals.forEach((el) => {
+            el.classList.remove('modal--visible');
+        });
+    }
+});
