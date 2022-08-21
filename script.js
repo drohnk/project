@@ -19,28 +19,52 @@ cross.addEventListener('click', function(el) {
 
 /*select */
 const defaultSelect = () => {
-    const element = document.querySelector('.select');
+    const element = document.querySelector('.gallery__select');
     const choices = new Choices(element, {
         searchEnabled: false
     });
 }
 defaultSelect();
-const elements = document.querySelectorAll('.selectr');
-const elementG = document.querySelectorAll('.gallery__select');
-elements.forEach(el => {
-    const choices = new Choices(el, {
-        searchEnabled: false
+/* MENU*/
+document.addEventListener('DOMContentLoaded', () => {
 
+
+    const menuBtns = document.querySelectorAll('.menu__btn');
+    const drops = document.querySelectorAll('.dropdown');
+
+    menuBtns.forEach(el => {
+        el.addEventListener('click', (e) => {
+            let currentBtn = e.currentTarget;
+            let drop = currentBtn.closest('.menu__item').querySelector('.dropdown');
+
+            menuBtns.forEach(el => {
+                if (el !== currentBtn) {
+                    el.classList.remove('menu__btn--active');
+                }
+            });
+
+            drops.forEach(el => {
+                if (el !== drop) {
+                    el.classList.remove('dropdown--active');
+                }
+            });
+
+            drop.classList.toggle('dropdown--active');
+            currentBtn.classList.toggle('menu__btn--active');
+        });
     });
 
-});
-elementG.forEach(el => {
-    const choices = new Choices(el, {
-        searchEnabled: false
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.menu')) {
+            menuBtns.forEach(el => {
+                el.classList.remove('menu__btn--active');
+            });
+
+            drops.forEach(el => {
+                el.classList.remove('dropdown--active');
+            });
+        }
     });
-
-
-
 });
 /*const GallerySelect = () => {
     const elementG = document.querySelector('.gallery__select');
@@ -136,7 +160,9 @@ var swiperP = new Swiper(".mySwiperP", {
     spaceBetween: 50,
     slidesPerGroup: 3,
     loop: true,
-    loopFillGroupWithBlank: true,
+    loopPreventsSlide: true,
+
+    centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -176,18 +202,31 @@ var swiperP = new Swiper(".mySwiperP", {
 var swiperE = new Swiper(".mySwiperE", {
     slidesPerView: 3,
     spaceBetween: 50,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
     breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 27,
+            slidesPerGroup: 3,
+
+        },
         767: {
             slidesPerView: 2,
             spaceBetween: 34,
+            slidesPerGroup: 2,
         },
         320: {
             slidesPerView: 1,
             spaceBetween: 0,
+            slidesPerGroup: 2,
         }
 
     }
@@ -200,8 +239,9 @@ var swiperG = new Swiper(".mySwiperG", {
 
     pagination: {
         el: ".swiper-pagination",
-        type: "fraction"
+        type: "fraction",
     },
+    centerInsufficientSlides: false,
     loop: true,
     slidesPerGroup: 3,
     navigation: {
@@ -243,7 +283,8 @@ new JustValidate('.contacts__form', {
         },
         tel: {
             required: true,
-
+            minLength: 12,
+            maxLength: 13
         },
     },
     messages: {
@@ -255,7 +296,8 @@ new JustValidate('.contacts__form', {
 
         tel: {
             required: 'Вы не ввели телефон',
-            function: 'Здесь должно быть 10 символов без +7'
+            minLength: 'Здесь должно быть 12 символов',
+            maxLength: 'Здесь должно быть 12 символов'
         }
     }
 });
@@ -275,15 +317,15 @@ btns.forEach((el) => {
         document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
         modalOverlay.classList.add('modal-overlay--visible');
     });
+
+});
+const modlCross = document.querySelector('.modal-cross');
+modlCross.addEventListener('click', function() {
+    modalOverlay.classList.remove("modal-overlay--visible");
 });
 
-modalOverlay.addEventListener('click', (e) => {
-    console.log(e.target);
-
-    if (e.target == modalOverlay) {
-        modalOverlay.classList.remove('modal-overlay--visible');
-        modals.forEach((el) => {
-            el.classList.remove('modal--visible');
-        });
-    }
+$(document).ready(function() {
+    $('.menu__btn').click(function(event) {
+        $(this).toggleClass('arrow--active');
+    });
 });

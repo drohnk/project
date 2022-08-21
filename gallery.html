@@ -55,7 +55,7 @@
                                 </li>
                             </ul>
                             <button class="header__out-burger bth">
-                    <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                             </svg>
                     <span class="header__out-text-burger">Войти</span>
@@ -68,7 +68,7 @@
                     <!---------------------------------------------------------------------END-burger-------------------------------------------------------->
                     <!--------------------------------------------------------------------HEADER-TOP----------------------------------------------------------------------->
 
-                    <a class="header__logo"><img class="header__logo-img" src="img/Лого.svg" alt="Blanchard"></a>
+                    <div class="header__logo"></div>
                     <div class="header__top-nav">
                         <ul class="header__list list">
                             <li class="header__list-item">
@@ -92,7 +92,7 @@
                         </ul>
                     </div>
                     <a class="header__out" href="#">
-                        <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="header__out-svg" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                         </svg>
                         <span class="header__out-text">Войти</span>
@@ -107,7 +107,7 @@
                                
                       </button>
                             <div class="search">
-                                <div class="search-img">
+                                <div class="search-img-lupa">
                                     <button class="header__bth bth" type="submit" aria-hidden="true">
                                 <svg class=" icon icon-input " width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
@@ -119,10 +119,11 @@
                                 <div class="search-img">
 
                                     <button class="header__bth cross-bth bth" type="button" aria-label="Закрыть " aria-hidden="true">
-                                <svg class=" cross " width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="cross" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
                                     <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white"/>
                                     </svg>
+                                  
                                 </button>
                                 </div>
                             </div>
@@ -141,50 +142,110 @@
                     <div class="container">
                         <div class="hero__top-left">
                             <nav class="hero-nav-bottom">
-                                <!--SELECT-->
-                                <!--REALISM-->
-                                <select name="select" class="select" data-type="one">
-                        <option selected disabled hidden >Реализм</option>
-                                <option class="list-artists-item tint"  value="hurr">Тинторетто</option>
-                                <option class="list-artists-item"   value="hurr">Фридрих</option>
-                                <option class="list-artists-item"  value="hurr">Леонардо</option>
-                                <option class="list-artists-item ggg"   value="hurr">Верроккьо</option>
-                    </select>
-                                <!--IMPRESSIOMISM-->
-                                <select name="selectr" class="selectr">
-                        <option selected disabled hidden>Импрессионизм</option>
-                                <option class="list-artists-item" value="hurr">Моне</option>
-                                <option class="list-artists-item" value="hurr">Сислей</option>
-                                <option class="list-artists-item" value="hurr">Мане</option>
-                                <option class="list-artists-item" value="hurr">Ренуар</option>
-                        </select>
-                                <!--POCTimpressionism-->
-                                <select name="selectr" class="selectr">
-                        <option selected disabled hidden>Постимпрессионизм
-                        </option>
-                                <option class="list-artists-item" value="hurr">Ван Гог</option>
-                                <option class="list-artists-item" value="hurr">Сезанн</option>
-                                <option class="list-artists-item" value="hurr">Гоген</option>
-                                <option class="list-artists-item" value="hurr">Сёра</option>
-                            </select>
-                                <!--AVANGARD-->
-                                <select name="selectr" class="selectr">
-                        <option selected disabled hidden>Авангард
-                        </option>
-                                <option class="list-artists-item" value="hurr">Кандинский</option>
-                                <option class="list-artists-item" value="hurr">Маринетти</option>
-                                <option class="list-artists-item" value="hurr">Малевич</option>
-                                <option class="list-artists-item" value="hurr">Пикассо</option>
-                        </select>
-                                <!--FUTURISM-->
-                                <select name="selectr" class="selectr">
-                            <option selected disabled hidden>Футуризм
-                            </option>
-                                <option class="list-artists-item" value="hurr">Карра</option>
-                                <option class="list-artists-item" value="hurr">Прателла</option>
-                                <option class="list-artists-item" value="hurr">Северини</option>
-                                <option class="list-artists-item" value="hurr">Балла</option>
-                     </select>
+                                <!--MENU-->
+                                <ul class="menu list-reset">
+                                    <!--REALISM-->
+                                    <li class="menu__item">
+                                        <button class="menu__btn bth">Реализм</button>
+
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-1-1">Тинторетто</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-1-2">Фридрих</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-1-3">Леонардо</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-1-4">Верроккьо</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!--IMPRESSIOMISM-->
+                                    <li class="menu__item">
+                                        <button class="menu__btn bth">Импрессионизм</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-2-1">Моне</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-2-2">Сисле</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-2-3">Мане</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-2-4">Ренуар</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!--POCTimpressionism-->
+                                    <li class="menu__item">
+                                        <button class="menu__btn bth">Постимпрессионизм</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-3-1">Ван Гог</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-3-2">Сезанн</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-3-3">Гоген</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-3-4">Сёра</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!--AVANGARD-->
+                                    <li class="menu__item">
+                                        <button class="menu__btn bth">Авангард</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-4-1">Кандинский</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-4-2">Маринетти</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-4-3">Малевич</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-4-4">Пикассо</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!--FUTURISM-->
+                                    <li class="menu__item">
+                                        <button class="menu__btn bth">Футуризм</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-5-1">Карра</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-5-2">Прателла</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-5-3">Северини</a>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <a href="#" class="dropdown__link menu-link-5-4">Балла</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
                             </nav>
                             <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
                             <div class="hero__bottom-right">
@@ -198,7 +259,7 @@
                                                     </svg>
                         </button>
                                         </div>
-                                        <input class="hero__input" type="text" placeholder="Поиск по сайту" aria-hidden="true" value="Поиск по сайту">
+                                        <input class="hero__input" type="text" placeholder="Поиск по сайту" aria-hidden="true">
                                     </div>
                                 </form>
                             </div>
@@ -250,7 +311,6 @@
                             <select class="gallery__select" name="select" id="selectCustom">
                     <option class="select__content" value="hurr">Живопись</option>
                     <option class="select__content" value="hurr">Рисунок</option>
-                    <option class="select__content" value="hurr">Скульптура</option>
                 </select>
                         </div>
                         <div class="gallery__checkbox">
@@ -284,26 +344,81 @@
                                 </div>
                             </div>
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide gallery__card-1 gallery__slid" data-path="one"></div>
-                                <div class="swiper-slide gallery__card-2 gallery__slid"></div>
-                                <div class="swiper-slide gallery__card-3 gallery__slid"></div>
-                                <div class="swiper-slide gallery__card-4 gallery__slid"></div>
-                                <div class="swiper-slide gallery__card-5 gallery__slid"></div>
-                                <div class="swiper-slide gallery__card-6 gallery__slid"></div>
+                                <div class="swiper-slide gallery__card-1 gallery__slid" data-path="one">
+                                    <div class="gallery__background-hover"></div>
+
+                                </div>
+                                <div class="swiper-slide gallery__card-2 gallery__slid" data-path="two">
+                                    <div class="gallery__background-hover"></div>
+                                </div>
+                                <div class="swiper-slide gallery__card-3 gallery__slid">
+                                    <div class="gallery__background-hover"></div>
+                                </div>
+                                <div class="swiper-slide gallery__card-4 gallery__slid">
+                                    <div class="gallery__background-hover"></div>
+                                </div>
+                                <div class="swiper-slide gallery__card-5 gallery__slid">
+                                    <div class="gallery__background-hover"></div>
+                                </div>
+                                <div class="swiper-slide gallery__card-6 gallery__slid">
+                                    <div class="gallery__background-hover"></div>
+                                </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
             </div>
+            <!--?????????????????????????????????????????????????????????????-->
             <div class="modals">
                 <div class="modal-overlay">
                     <div class="modal modal--1" data-target="one">
-                        <img src="img/g1.jpg" alt="">
-                        <!--!!!!!!!!!!!!-->
+                        <img class="modal__left" src="img/modal.jpg" alt="">
+                        <div class="modal modal-right">
+                            <bottom class="modal-cross bth">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3046L15.3333 0.000397987L16 0.696045L1.33331 16.0003L0.666641 15.3046Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.665993 0.000119108L15.3327 15.3044L14.666 16L-0.000674808 0.695766L0.665993 0.000119108Z" fill="black"/>
+                                </svg>
+                            </bottom>
+                            <div class="modal__title">
+                                Казимир Малевич
+                            </div>
+                            <div class="modal__name">
+                                &laquo;Женщина с&nbsp;граблями&raquo;
+                            </div>
+                            <div class="modal__data">
+                                1931&ndash;1932
+                            </div>
+                            <div class="modal__par">
+                                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal modal--2" data-target="me-popup">
-                        Казимир Малевич
+                </div>
+                <div class="modal-overlay">
+                    <div class="modal modal--2" data-target="two">
+                        <img class="modal__left" src="img/modal.jpg" alt="">
+                        <div class="modal modal-right">
+                            <bottom class="modal-cross bth">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3046L15.3333 0.000397987L16 0.696045L1.33331 16.0003L0.666641 15.3046Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.665993 0.000119108L15.3327 15.3044L14.666 16L-0.000674808 0.695766L0.665993 0.000119108Z" fill="black"/>
+                                </svg>
+                            </bottom>
+                            <div class="modal__title">
+                                Казимир Малевич
+                            </div>
+                            <div class="modal__name">
+                                &laquo;Женщина с&nbsp;граблями&raquo;
+                            </div>
+                            <div class="modal__data">
+                                1931&ndash;1932
+                            </div>
+                            <div class="modal__par">
+                                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -322,7 +437,7 @@
                     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
                     <div class="catalog__tab">
                         <!--ПЕРВЫЙ ТАБ-->
-                        <div class="text__container tabs-item tabs-item--active " data-target="one">
+                        <div class="text__container tabs-item tabs-item--active " data-target="one-t">
                             <div class="catalog-time__text">
                                 <img class="catalog__img" src="img/catalog.jpg" alt="">
                                 <h3 class="catalog-time__name ">Доменико Гирландайо</h3>
@@ -337,7 +452,7 @@
                             </div>
                         </div>
                         <!--2 ТАБ-->
-                        <div class="text__container tabs-item tabs-item--active " data-target="two">
+                        <div class="text__container tabs-item tabs-item--active " data-target="two-t">
                             <div class="catalog-time__text ">
                                 <img class="catalog__img-none" src="img/catalog-none.jpg" alt="">
                                 <h3 class="catalog-time__name">Что мы&nbsp;о&nbsp;нём знаем?</h3>
@@ -362,124 +477,124 @@
                                     <ul class="accordion__inner-list reset-list">
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="one">Бенедетто ди&nbsp;Биндо</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="one-t">Бенедетто ди&nbsp;Биндо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Бергоньоне, Амброджо</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Бергоньоне, Амброджо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Биссоло, Франческо</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Биссоло, Франческо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Больтраффио, Джованни</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Больтраффио, Джованни</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Бонсиньори, Франческо</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Бонсиньори, Франческо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Боттичини, Рафаэлло</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Боттичини, Рафаэлло</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Брамантино</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Брамантино</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Бреа, Людовико</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Бреа, Людовико</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Бьяджо д&rsquo;Антонио Туччи</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Бьяджо д&rsquo;Антонио Туччи</span>
                                             </a>
                                         </li>
                                         <!--2-->
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Веккьетта</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Веккьетта</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Андреа Верроккьо</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Андреа Верроккьо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two">Доменико Гирландайо</span>
+                                                <span class="link__text tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Доменико Гирландайо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Беноццо Гоццоли</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Беноццо Гоццоли</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Граначчи, Франческо</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Граначчи, Франческо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Грегорио ди&nbsp;Чекко</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Грегорио ди&nbsp;Чекко</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Джованни да&nbsp;Удине</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Джованни да&nbsp;Удине</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Джованни ди&nbsp;Паоло</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Джованни ди&nbsp;Паоло</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Джорджоне</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Джорджоне</span>
                                             </a>
                                         </li>
                                         <!--3-->
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Парентино, Бернардо</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Парентино, Бернардо</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Пезеллино</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Пезеллино</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Пьетро Перуджино</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Пьетро Перуджино</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Перуцци, Бальдассаре</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Перуцци, Бальдассаре</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Пизанелло</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Пизанелло</span>
                                             </a>
                                         </li>
                                         <li class="accordion__item">
                                             <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-painter-btn="empty">
-                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two">Пинтуриккьо</span>
+                                                <span class="link__text  tabs-nav__bth tabs-nav__bth-first" data-path="two-t">Пинтуриккьо</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -667,7 +782,7 @@
                                 <div class="events__content">
                                     <div class="events__location place">Музей им. Щусева </div>
                                     <div class="events__data place">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</div>
-                                    <div class="events__title-card">Книжная гравюра в&nbsp;живом&nbsp;восприятии</div>
+                                    <div class="events__title-card">Книжная гравюра в&nbsp;живом восприятии</div>
                                     <div class="events__text">
                                         Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо
                                     </div>
@@ -726,6 +841,7 @@
                                 <path d="M6 11L0.999995 6L6 0.999998" stroke="black"/>
                                 </svg>
                         </div>
+                        <div class="swiper-pagination events__navigation"></div>
                     </div>
                 </div>
             </div>
@@ -746,15 +862,15 @@
                 <div class="swiperP__container">
                     <div class="swiper mySwiperP">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide project__slide"><img src="img/p1.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p2.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p3.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p4.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p5.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p6.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p7.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p8.jpg" alt=""></div>
-                            <div class="swiper-slide project__slide"><img src="img/p9.jpg" alt=""></div>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p1.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p2.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p3.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p4.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p5.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p6.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p7.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p8.jpg" alt=""></a>
+                            <a class="swiper-slide project__slide" href="#"><img class="project__slide-img" src="img/p9.jpg" alt=""></a>
                         </div>
                         <div class="swiper-button-next pro-button-next">
                             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -793,19 +909,20 @@
                   </label>
                             </div>
                             <button class="bth contacts__bth" type="submit">Заказать обратный звонок</button>
+                            <button class="bth contacts__bth--320" type="submit">Заказать</button>
                         </form>
 
                         <div class="contacts__right">
                             <div class="contacts__subtitle">
                                 Связаться в&nbsp;один клик
                             </div>
-                            <a aria-label="Ссылка на социальную сеть Whatsapp" class="contact-link whatsapp" href="#">
+                            <a aria-label="Ссылка на социальную сеть Whatsapp" class="contact-link whatsapp" href="https://www.whatsapp.com/?lang=ru" target="_blank">
                                 <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>
                             <path d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z" fill="white"/>
                             </svg>
                             </a>
-                            <a aria-label="Ссылка на социальную сеть Telegtam" class="contact-link" href="#">
+                            <a aria-label="Ссылка на социальную сеть Telegtam" class="contact-link" href="https://telegram.org/android?setln=ru" target="_blank">
                                 <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="#26A5E4"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z" fill="white"/>
@@ -825,12 +942,12 @@
                     <img src="img/Лого.svg" alt="Blanchard">
                 </div>
                 <div class="footer__right">
-                    <a aria-label="Ссылка на социальную сеть Вконтакте" class="footer-link vk" href="#">
+                    <a aria-label="Ссылка на социальную сеть Вконтакте" class="footer-link vk" href="https://vk.com/feed" target="_blank">
                         <svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z" fill="#CACACA"/>
                     </svg>
                     </a>
-                    <a aria-label="Ссылка на социальную сеть Одноклассники" class="footer-link" href="#">
+                    <a aria-label="Ссылка на социальную сеть Одноклассники" class="footer-link" href="https://ok.ru" target="_blank">
                         <svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z" fill="#CACACA"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z" fill="#CACACA"/>
@@ -846,6 +963,7 @@
     <script src="choices.min.js"></script>
     <!--swiper-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js "></script>
+    <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
