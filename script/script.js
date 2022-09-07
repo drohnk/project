@@ -18,6 +18,7 @@ cross.addEventListener('click', function(el) {
 });
 
 /*select */
+
 const defaultSelect = () => {
     const element = document.querySelector('.gallery__select');
     const choices = new Choices(element, {
@@ -25,10 +26,10 @@ const defaultSelect = () => {
     });
 }
 defaultSelect();
+
 /* MENU*/
+
 document.addEventListener('DOMContentLoaded', () => {
-
-
     const menuBtns = document.querySelectorAll('.menu__btn');
     const drops = document.querySelectorAll('.dropdown');
 
@@ -66,32 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-/*const GallerySelect = () => {
-    const elementG = document.querySelector('.gallery__select');
-    const choices = new Choices(elementG, {
-        searchEnabled: false
-    });
-}
-defaultSelect();
-elements.forEach(el => {
-    const choices = new Choices(el, {
-        searchEnabled: false
-    });
 
-});
-elementG.forEach(el => {
-    const choices = new Choices(el, {
-        searchEnabled: false
-    });
-
-});*/
-
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+// Создание карты.
 ymaps.ready(init);
 
 function init() {
-    // Создание карты.
     var myMap = new ymaps.Map("map", {
         center: [55.758468, 37.601088],
         zoom: 14
@@ -101,7 +81,7 @@ function init() {
         iconLayout: 'default#image',
         iconImageHref: 'img/card.svg',
         iconImageSize: [20, 20],
-        iconImageOffset: [-3, -42]
+        iconImageOffset: [-3, -42],
     });
     myMap.geoObjects.add(myPlacemark);
 
@@ -161,8 +141,6 @@ var swiperP = new Swiper(".mySwiperP", {
     slidesPerGroup: 3,
     loop: true,
     loopPreventsSlide: true,
-
-    centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -175,30 +153,28 @@ var swiperP = new Swiper(".mySwiperP", {
         320: {
             slidesPerView: 1,
             spaceBetween: 21,
-            slidesPerGroup: 1
+            slidesPerGroup: 1,
         },
         560: {
             slidesPerView: 2,
             spaceBetween: 33,
-            slidesPerGroup: 2
+            slidesPerGroup: 2,
         },
         1024: {
             slidesPerView: 2,
             spaceBetween: 50,
-            slidesPerGroup: 2
+            slidesPerGroup: 2,
         },
-        1920: {
+        1200: {
             slidesPerView: 3,
             spaceBetween: 50,
             slidesPerGroup: 3,
-
         }
     }
 });
 
-
-
 /*Свайпер События */
+
 var swiperE = new Swiper(".mySwiperE", {
     slidesPerView: 3,
     spaceBetween: 50,
@@ -212,11 +188,15 @@ var swiperE = new Swiper(".mySwiperE", {
         prevEl: ".swiper-button-prev"
     },
     breakpoints: {
+        1100: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+        },
         1024: {
             slidesPerView: 3,
             spaceBetween: 27,
             slidesPerGroup: 3,
-
         },
         767: {
             slidesPerView: 2,
@@ -226,17 +206,14 @@ var swiperE = new Swiper(".mySwiperE", {
         320: {
             slidesPerView: 1,
             spaceBetween: 0,
-            slidesPerGroup: 2,
+            slidesPerGroup: 1,
         }
-
     }
-
 });
 /*Свайпер Галерея */
 var swiperG = new Swiper(".mySwiperG", {
     slidesPerView: 3,
     spaceBetween: 50,
-
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
@@ -249,13 +226,12 @@ var swiperG = new Swiper(".mySwiperG", {
         prevEl: ".swiper-button-prev"
     },
     breakpoints: {
-
-        1024: {
+        1700: {
             slidesPerView: 3,
             spaceBetween: 50,
             slidesPerGroup: 3,
         },
-        561: {
+        687: {
             slidesPerView: 2,
             spaceBetween: 34,
             slidesPerGroup: 2,
@@ -268,12 +244,9 @@ var swiperG = new Swiper(".mySwiperG", {
     }
 });
 
-
-
-
+//input
 
 const validation = new JustValidate('.contacts__form');
-
 new JustValidate('.contacts__form', {
     rules: {
         name: {
@@ -284,28 +257,31 @@ new JustValidate('.contacts__form', {
         tel: {
             required: true,
             minLength: 12,
-            maxLength: 13
+            maxLength: 13,
+
         },
     },
     messages: {
         name: {
             required: 'Вы не ввели имя',
             minLength: 'Введите 2 и более символов',
-            maxLength: 'Запрещено вводить более 10 символов'
+            maxLength: 'Не более 10 символов'
         },
 
         tel: {
             required: 'Вы не ввели телефон',
             minLength: 'Здесь должно быть 12 символов',
-            maxLength: 'Здесь должно быть 12 символов'
-        }
+            maxLength: 'Здесь должно быть 12 символов',
+
+        },
     }
 });
-/*modal*/
-const btns = document.querySelectorAll('.gallery__slid');
+
+//modal
+
+const btns = document.querySelectorAll('.gallery__slide');
 const modalOverlay = document.querySelector('.modal-overlay');
 const modals = document.querySelectorAll('.modal');
-
 btns.forEach((el) => {
     el.addEventListener('click', (e) => {
         let path = e.currentTarget.getAttribute('data-path');
@@ -328,4 +304,28 @@ $(document).ready(function() {
     $('.menu__btn').click(function(event) {
         $(this).toggleClass('arrow--active');
     });
+});
+
+//Плавный скролл
+
+const anchors = document.querySelectorAll('a[href^="#"]')
+for (let anchor of anchors) {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault()
+        const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+        document.querySelector(goto).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
+};
+
+//tooltip
+
+tippy('.js-tooltip', {
+    allowHTML: true,
+    trigger: 'mouseenter focus click',
+    interactive: true,
+    duration: 300,
+    theme: 'Amethyst',
 });
