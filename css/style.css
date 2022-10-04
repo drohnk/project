@@ -61,7 +61,7 @@ body {
 .container {
     max-width: 1920px;
     padding: 0;
-    padding: 0 8.33% 0;
+    padding: 0 8% 0;
     box-sizing: border-box;
 }
 
@@ -362,28 +362,27 @@ body {
 }
 
 .hero__bottom {
-    padding: 65px 0 143px 0;
+    padding: 70px 0 143px 0;
     max-width: 560px;
 }
 
 .hero__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 76px;
-    line-height: 98px;
-    letter-spacing: 1px;
-    color: var(--white);
-    margin-bottom: -4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 83px;
+  letter-spacing: 1px;
+  color: var(--white);
+  margin-bottom: 18px;
 }
 
 .hero__par {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--white);
-    letter-spacing: 1px;
-    margin-bottom: 114px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--white);
+  margin-bottom: 117px;
 }
 
 .hero__bth {
