@@ -55,20 +55,21 @@ body {
     margin: 0;
     margin: 0 auto;
     padding: 0;
-    max-width: 1920px;
+
 }
 
 .container {
-    max-width: 1920px;
+max-width: 1600px;
+margin: 0 auto;
     padding: 0;
-    padding: 0 8% 0;
+    /* padding: 0 8% 0; */
     box-sizing: border-box;
 }
 
 .header__container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1920px;
+    max-width: 1600px;
 }
 
  :root {
@@ -363,7 +364,7 @@ body {
 
 .hero__bottom {
     padding: 70px 0 143px 0;
-    max-width: 560px;
+    max-width: 570px;
 }
 
 .hero__title {
@@ -379,7 +380,7 @@ body {
 .hero__par {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 19.7px;
   line-height: 30px;
   color: var(--white);
   margin-bottom: 117px;
@@ -931,7 +932,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     object-fit: cover;
-    padding: 80px 58px 79px 9px;
+
     margin-bottom: 80px;
 }
 
@@ -945,6 +946,7 @@ body {
 
 .gallery__container {
     display: flex;
+    padding: 80px 58px 79px 3px;
 }
 
 .gallery__right {
@@ -1642,7 +1644,7 @@ body {
     font-size: 12px;
     line-height: 16px;
     color: #999999;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
 }
 
 .catalog-time__text {
@@ -2355,7 +2357,7 @@ body {
 }
 
 .footer__contant {
-    max-width: 1920px;
+    max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
 }

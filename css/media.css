@@ -59,11 +59,14 @@
         font-size: 71px;
         line-height: 98px;
         letter-spacing: 4px;
+        margin-bottom: -1px;
     }
     .hero__par {
         margin-top: -10px;
         letter-spacing: .9px;
         margin-bottom: 155px;
+        font-size: 18px;
+
     }
     .header__out {
         display: none;
@@ -319,6 +322,9 @@
     .gallery__select-text {
         letter-spacing: 1px;
         margin-bottom: 12px;
+    }
+    .gallery__container {
+      padding: 0;
     }
     .choices__inner {
         font-size: 14px;
@@ -730,7 +736,7 @@
         font-size: 35px;
         line-height: 44px;
         text-align: center;
-        padding-bottom: 17px;
+        padding-bottom: 13px;
         letter-spacing: 0px;
         font-weight: 700;
     }
@@ -922,7 +928,7 @@
         font-size: 17px;
     }
     .events__data {
-        margin-bottom: 9px;
+        margin-bottom: 10px;
     }
     .events__link {
         bottom: 48px;
