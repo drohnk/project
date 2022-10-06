@@ -1,3 +1,8 @@
+@media (max-width:1700px) {
+  .container {
+    padding: 0 50px;
+  }
+}
 @media (max-width:1456px) {
     .cont-cont {
         flex-direction: column;
