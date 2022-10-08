@@ -27,6 +27,14 @@ const defaultSelect = () => {
 }
 defaultSelect();
 
+
+
+(() => {
+  new Accordion(".js-accordion-container", {
+      openOnInit: [0]
+  });
+})();
+
 /* MENU*/
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -88,11 +96,6 @@ function init() {
 }
 
 
-(() => {
-    new Accordion(".js-accordion-container", {
-        openOnInit: [0]
-    });
-})();
 
 /*ТАБЫ*/
 document.querySelectorAll('.tabs-nav__bth').forEach(function(tabsBtn) {
