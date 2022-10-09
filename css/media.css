@@ -2,12 +2,19 @@
   .container {
     padding: 0 50px;
   }
+  .cont-cont {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contacts__left {
+  margin-bottom: 30px;
+}
+.contacts__form {
+  margin-bottom: 30px;
+}
 }
 @media (max-width:1456px) {
-    .cont-cont {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
     .accordion__inner-list {
         height: 100%;
     }
@@ -61,14 +68,13 @@
         display: none;
     }
     .hero__title {
-        font-size: 71px;
+        font-size: 70px;
         line-height: 98px;
-        letter-spacing: 4px;
         margin-bottom: -1px;
     }
     .hero__par {
         margin-top: -10px;
-        letter-spacing: .9px;
+
         margin-bottom: 155px;
         font-size: 18px;
 
@@ -113,8 +119,8 @@
         cursor: pointer;
     }
     .hero__bth {
-        font-size: 19px;
-        padding: 22px 38px;
+        font-size: 18px;
+        padding: 22px 35px;
     }
     .header__out-burger:hover {
         background-color: var(--amethysta);
@@ -345,6 +351,7 @@
         margin-bottom: 81px;
     }
     .catalog__par {
+      font-size: 15px;
         line-height: 32px;
         margin-bottom: 39px;
     }
@@ -362,7 +369,7 @@
         text-align: end;
     }
     .events__content {
-        padding: 4px 34px 77px 34px;
+        padding: 4px 20px 77px 34px;
     }
     .events__data {
         margin-bottom: 4px;
@@ -386,10 +393,11 @@
         margin-bottom: 81px;
     }
     .project__par {
+      font-size: 15px;
         padding-bottom: 20px;
     }
     .cont-cont {
-        padding: 42px 0 38px;
+        padding: 42px 0 40px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -398,11 +406,11 @@
         font-size: 14px;
     }
     .contacts__title {
-        padding-bottom: 4px;
+        padding-bottom: 1px;
     }
     .contacts__bth {
         max-width: 343px;
-        font-size: 19px;
+        font-size: 18px;
         padding: 12px 42px;
     }
     .mySwiperP {
@@ -415,7 +423,7 @@
         width: 270px;
     }
     .contacts__left {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
     .footer-link svg {
         width: 60px;
@@ -501,6 +509,9 @@
     }
     .about-us {
         margin-bottom: 70px;
+    }
+    .about-us__par {
+      font-size: 15px;
     }
     .gallery {
         background-image: url(../img/gallery768.jpg);
@@ -604,7 +615,7 @@
         width: 100%;
     }
     .cont-cont {
-        padding: 43px 0 38px;
+        padding: 43px 0 41px;
     }
     .lbl-tel,
     .lbl-name {
@@ -653,6 +664,9 @@
     .label__contacts {
         display: flex;
         flex-direction: column;
+    }
+    .contacts__bth {
+      min-width: 100%;
     }
     .search {
         padding: 11px 14px 1px 14px;
@@ -738,7 +752,7 @@
         align-items: center;
     }
     .hero__title {
-        font-size: 35px;
+        font-size: 32px;
         line-height: 44px;
         text-align: center;
         padding-bottom: 13px;
@@ -748,7 +762,7 @@
     .hero__par {
         font-weight: 400;
         line-height: 16px;
-        margin-bottom: 41px;
+        margin-bottom: 42px;
         text-align: center;
         font-size: 11px;
         max-width: 85%;
@@ -757,7 +771,7 @@
     .hero__bth {
         min-width: 200px;
         min-height: 40px;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 16px;
         padding: 11px 16px;
     }
@@ -809,8 +823,15 @@
         padding-bottom: 4px;
     }
     .check {
+      line-height: 32px;
         padding-left: 23px;
     }
+    .slider__bth {
+      padding-top: 45px;
+      margin-bottom: 21px;
+    }
+
+
     .mySwiperG {
         display: flex;
         flex-direction: column-reverse;
@@ -827,6 +848,9 @@
     .catalog__title {
         margin-bottom: 12px;
     }
+    .catalog-time__content {
+      font-size: 15.5px;
+  }
     .accordion__inner-list {
         column-count: 1;
     }
@@ -845,6 +869,7 @@
         margin-bottom: 25px;
     }
     .gallery__select-text {
+      font-size: 15px;
         line-height: 17px;
     }
     .choices__item {
@@ -953,19 +978,23 @@
         line-height: 33px;
     }
     .project__subtitle {
-        font-size: 18.5px;
+        font-size: 18px;
         line-height: 32px;
         margin-bottom: 10px;
     }
     .project__par {
+      font-size: 16px;
         padding-bottom: 50px;
     }
     .contacts__title {
         font-weight: 600;
         font-size: 18px;
         line-height: 25px;
-        padding-bottom: 6px;
+        padding-bottom: 3px;
     }
+    .pro-button-next, .pro-button-prev {
+      top: 63%;
+  }
     .label__contacts {
         margin-bottom: 15px;
     }
@@ -1002,7 +1031,7 @@
         border: 2px solid var(--amethysta);
         border-radius: 100px;
         max-width: 329px;
-        height: 45px;
+        height: 43px;
         font-size: 18px;
         line-height: 25px;
         color: #9D5CD0;
@@ -1013,7 +1042,7 @@
         width: 100%;
     }
     .contacts__subtitle {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 32px;
     }
     .contact-link svg {

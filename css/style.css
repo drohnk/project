@@ -64,7 +64,7 @@ a {
 
 body {
     min-width: 320px;
-    font-family: "Open Sans";
+    font-family: 'OpenSans', sans-serif;
     background-color: var(--white);
 }
 
@@ -209,7 +209,7 @@ margin: 0 auto;
 }
 
 .header__list-item:not(:last-child) {
-    margin-right: 13.7%;
+    margin-right: 12.7%;
 }
 
 .header__logo {
@@ -390,7 +390,7 @@ margin: 0 auto;
 .hero__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 76px;
+  font-size: 70px;
   line-height: 83px;
   letter-spacing: 1px;
   color: var(--white);
@@ -400,7 +400,7 @@ margin: 0 auto;
 .hero__par {
   font-style: normal;
   font-weight: 700;
-  font-size: 19.7px;
+  font-size: 18px;
   line-height: 30px;
   color: var(--white);
   margin-bottom: 115px;
@@ -411,9 +411,9 @@ margin: 0 auto;
     min-height: 70px;
     background: var(--amethysta);
     border-radius: 100px;
-    padding: 23px 39px;
+    padding: 23px 35px;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 25px;
     text-align: center;
     color: var(--white);
@@ -459,7 +459,7 @@ margin: 0 auto;
 }
 
 .menu__item:not(:last-child) {
-    margin-right: 7.5%;
+    margin-right: 7.1%;
 }
 
 .menu__btn {
@@ -1650,7 +1650,7 @@ margin: 0 auto;
 }
 
 .catalog__img {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
     max-width: 100%;
 }
 
@@ -1659,7 +1659,7 @@ margin: 0 auto;
   padding: 0;
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 33px;
     color: var(--mine-shaft);
     margin-bottom: 7px;
@@ -1917,11 +1917,13 @@ margin: 0 auto;
 }
 
 .project__par {
+  margin: 0;
+  padding: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    max-width: 1077px;
+    max-width: 1080px;
     padding-bottom: 18px;
 }
 
@@ -1963,7 +1965,7 @@ margin: 0 auto;
 .pro-button-next,
 .pro-button-prev {
     position: absolute;
-    top: 59%;
+    top: 56%;
 }
 
 .partners__slider {
@@ -1975,7 +1977,7 @@ margin: 0 auto;
 }
 
 .pro-button-prev {
-    left: -2px;
+    left: 0px;
 }
 
 .swiperP {
@@ -1983,10 +1985,10 @@ margin: 0 auto;
 }
 
 .project__subtitle {
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding: 0;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 32px;
     color: var(--mine-shaft);
     margin-bottom: 23px;
@@ -2269,14 +2271,17 @@ margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 0;
+    padding: 40px 0 37px;
 }
 
 .contacts__title {
+  margin: 0;
+  padding: 0;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     color: var(--mine-shaft);
+    margin-bottom: 4px;
 }
 
 .contacts__form {
@@ -2356,7 +2361,7 @@ margin: 0 auto;
 
 .contacts__subtitle {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 32px;
     color: var(--mine-shaft);
     margin-bottom: 6px;
@@ -2366,16 +2371,14 @@ margin: 0 auto;
     margin-right: 17px;
 }
 
-.contact-link:hover svg path:first-child,
-.contact-link:focus svg path:first-child {
-    opacity: .5;
-    transition: opasity .3s ease;
-}
-
 .contact-link:focus-visible {
     outline: none;
 }
+.contact-link:hover {
+  opacity: .5;
+  transition: opacity .3s ease;
 
+}
 .contact-link:active svg path:first-child {
     outline: 1px solid var(--amethysta);
     border-radius: 50px;
@@ -2574,11 +2577,9 @@ margin: 0 auto;
 }
 
 
-/*Срелка при отсутсвии продолжения*/
-
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
-    opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
 
 .swiper-button-next.swiper-button-disabled svg path,
