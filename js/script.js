@@ -208,7 +208,7 @@ var swiperE = new Swiper(".mySwiperE", {
         },
         320: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 40,
             slidesPerGroup: 1,
         }
     }
@@ -242,7 +242,7 @@ var swiperG = new Swiper(".mySwiperG", {
         319: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            spaceBetween: 0,
+            spaceBetween: 12,
         }
     }
 });
