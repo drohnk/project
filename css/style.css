@@ -40,10 +40,9 @@ a {
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans-semibold'),
-    url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
-    url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+       url('../fonts/OpenSans-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -51,9 +50,8 @@ a {
 
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans-bold'),
-    url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
     url('../fonts/OpenSans-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
@@ -316,7 +314,7 @@ margin: 0 auto;
     border-bottom: 1px solid rgba(255, 255, 255, 0.85);
     padding-bottom: 3px;
     width: 218px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--white);
 }
@@ -390,9 +388,8 @@ margin: 0 auto;
 .hero__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
-  line-height: 83px;
-  letter-spacing: 1px;
+  font-size: 78px;
+  line-height: 84px;
   color: var(--white);
   margin-bottom: 18px;
 }
@@ -400,8 +397,8 @@ margin: 0 auto;
 .hero__par {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 29px;
   color: var(--white);
   margin-bottom: 115px;
 }
@@ -411,9 +408,9 @@ margin: 0 auto;
     min-height: 70px;
     background: var(--amethysta);
     border-radius: 100px;
-    padding: 23px 35px;
+    padding: 23px 32px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 25px;
     text-align: center;
     color: var(--white);
@@ -459,7 +456,7 @@ margin: 0 auto;
 }
 
 .menu__item:not(:last-child) {
-    margin-right: 7.1%;
+    margin-right: 7.6%;
 }
 
 .menu__btn {
@@ -469,7 +466,7 @@ margin: 0 auto;
     background-color: transparent;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
 }
 
@@ -931,7 +928,7 @@ margin: 0 auto;
     font-size: 48px;
     line-height: 65px;
     color: var(--mine-shaft);
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .about-us__par {
@@ -939,11 +936,11 @@ margin: 0 auto;
   padding: 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 32px;
     color: var(--mine-shaft);
     max-width: 1080px;
-    letter-spacing: .7px;
+
 }
 
 
@@ -1270,10 +1267,10 @@ margin: 0 auto;
   margin: 0;
   padding: 0;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 32px;
     color: #333333;
-    max-width: 1080px;
+    max-width: 1083px;
     margin-bottom: 38px;
 }
 
@@ -1660,7 +1657,7 @@ margin: 0 auto;
   padding: 0;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 33px;
     color: var(--mine-shaft);
     margin-bottom: 7px;
@@ -1678,8 +1675,7 @@ margin: 0 auto;
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 15px;
-  letter-spacing: .4px
+  font-size: 17px;
 }
 .catalog-time__text {
     font-style: normal;
@@ -1854,21 +1850,20 @@ margin: 0 auto;
     font-size: 25px;
     line-height: 33px;
     color: var(--mine-shaft);
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     max-width: 390px;
 }
 
 .events__text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 32px;
     color: var(--mine-shaft);
 }
-
 .events__link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
     color: var(--amethysta);
     border-bottom: 1px solid var(--amethysta);
     position: absolute;
@@ -1883,8 +1878,8 @@ margin: 0 auto;
 }
 
 .events__link:hover {
-    color: var(--heliotrope);
-    border-color: var(--heliotrope);
+  color: var(--heliotrope);
+  border-color: var(--heliotrope);
     transition: color 0.3s ease, border-color 0.3s ease;
     outline: none;
 }
@@ -1916,7 +1911,7 @@ margin: 0 auto;
 .project__title {
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 65px;
     color: #333333;
     margin-bottom: 13px;
@@ -1927,11 +1922,10 @@ margin: 0 auto;
   padding: 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 32px;
-    letter-spacing: .3px;
-    max-width: 1080px;
-    padding-bottom: 18px;
+    max-width: 1075px;
+    padding-bottom: 20px;
 
 }
 
@@ -2279,7 +2273,7 @@ margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0 37px;
+    padding: 37px 0 35px;
 }
 
 .contacts__title {
@@ -2305,7 +2299,7 @@ margin: 0 auto;
   margin: 0;
   padding: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 32px;
     color: var(--mine-shaft);
 }

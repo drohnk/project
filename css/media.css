@@ -68,23 +68,20 @@
         display: none;
     }
     .hero__title {
-        font-size: 70px;
+        font-size: 78px;
         line-height: 98px;
         margin-bottom: -1px;
     }
     .hero__par {
         margin-top: -10px;
-
         margin-bottom: 155px;
-        font-size: 18px;
+        font-size: 19px;
 
     }
     .header__out {
         display: none;
     }
-    .about-us__par {
-      letter-spacing: .2px;
-    }
+
     .burger-menu-block {
         display: block;
         height: 28px;
@@ -122,8 +119,8 @@
         cursor: pointer;
     }
     .hero__bth {
-        font-size: 18px;
-        padding: 22px 35px;
+      font-size: 19px;
+      padding: 24px 33px;
     }
     .header__out-burger:hover {
         background-color: var(--amethysta);
@@ -252,7 +249,10 @@
         background-image: url(../img/hero-3-1024.jpg);
     }
     .about-us {
-        margin-bottom: 71px;
+        margin-bottom: 68px;
+    }
+    .about-us__title {
+      margin-bottom: 19px;
     }
     .gallery__slid {
         height: 315px;
@@ -305,7 +305,7 @@
         padding: 42px 50px 40px 0;
     }
     .gallery {
-        padding: 78px 0 81px;
+        padding: 80px 0 80px;
     }
     .gallery__left {
         min-width: 30.3%;
@@ -345,7 +345,7 @@
         min-height: 38px;
     }
     .choices__list--single .choices__item {
-        font-size: 16px;
+        font-size: 17px;
     }
     .gallery__checkbox {
         padding-bottom: 33px;
@@ -354,7 +354,7 @@
         margin-bottom: 81px;
     }
     .catalog__par {
-      font-size: 15px;
+      font-size: 17px;
         line-height: 32px;
         margin-bottom: 39px;
     }
@@ -402,9 +402,8 @@
       margin-bottom: 14px;
     }
     .project__par {
-      font-size: 15px;
+      font-size: 16.9px;
         padding-bottom: 20px;
-        letter-spacing: 0.2px;
     }
     .cont-cont {
         padding: 42px 0 40px;
@@ -420,8 +419,8 @@
     }
     .contacts__bth {
         max-width: 343px;
-        font-size: 18px;
-        padding: 12px 42px;
+        font-size: 20px;
+        padding: 12px 46px;
     }
     .mySwiperP {
         max-width: 89%;
@@ -521,17 +520,25 @@
         margin-bottom: 70px;
     }
     .about-us__par {
-      font-size: 15px;
+      font-size: 17px;
     }
     .gallery {
         background-image: url(../img/gallery768.jpg);
-        padding: 78px 0 79px;
+        padding: 82px 0 76px;
+    }
+    .gallery__title {
+      font-size: 49px;
+      margin-bottom: 12px;
     }
     .gallery__container {
         flex-direction: column;
     }
     .gallery__left {
         width: 281px;
+    }
+    .choices[data-type*=select-one]::after {
+      top: 30%;
+      right: 26.5px;
     }
     .slider__bth {
         padding-left: 0;
@@ -576,6 +583,10 @@
         width: 100%;
         padding-top: 49px;
     }
+    .accordion__item {
+      margin-bottom: 12.7px;
+      font-size: 17px;
+  }
     .accordion__inner-list {
         column-count: 3;
         max-height: 100%;
@@ -589,6 +600,9 @@
     }
     .events__link {
         bottom: 46px;
+    }
+    .events__title-card {
+      font-size: 25.3px;
     }
     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -611,6 +625,7 @@
         height: 106px;
     }
     .project__par {
+      font-size: 17px;
         padding-bottom: 31px;
     }
     .project__subtitle {
@@ -651,8 +666,7 @@
     line-height: 28px;
 }
 .contacts__par {
-  font-size: 14px;
-  letter-spacing: -0.4px;
+  font-size: 15px;
 }
     .modal--1,
     .modal--2 {
@@ -667,12 +681,26 @@
         height: 500px;
     }
     .accordion__heading {
-        padding: 39px 50px 43px 0;
+      padding: 43px 50px 39px 0;
     }
     .choices__list--dropdown,
     .choices__list[aria-expanded] {
       background-color: #000;
     }
+    .projects__link-inner {
+      position: relative;
+      display: none;
+
+  }
+
+.projects__link-inner-tablet {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  position: relative;
+  color: var(--amethysta);
+  transition: color .3s ease-in-out;
+}
 }
 
 @media (max-width:657px) {
@@ -774,7 +802,7 @@
         align-items: center;
     }
     .hero__title {
-        font-size: 32px;
+        font-size: 34px;
         line-height: 44px;
         text-align: center;
         padding-bottom: 13px;
@@ -786,7 +814,7 @@
         line-height: 16px;
         margin-bottom: 42px;
         text-align: center;
-        font-size: 11px;
+        font-size: 12px;
         max-width: 85%;
         letter-spacing: 0;
     }
@@ -845,8 +873,6 @@
     .search-img {
       padding-left: 34px;
       padding-right: 3px;
-
-
   }
     .about-us {
         margin-bottom: 43px;
@@ -856,7 +882,7 @@
         line-height: 28px;
     }
     .about-us__par {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 28px;
         letter-spacing: 0;
     }
@@ -872,8 +898,6 @@
       padding-top: 45px;
       margin-bottom: 21px;
     }
-
-
     .mySwiperG {
         display: flex;
         flex-direction: column-reverse;
@@ -891,7 +915,7 @@
         margin-bottom: 12px;
     }
     .catalog-time__content {
-      font-size: 15.5px;
+      font-size: 17px;
       letter-spacing: 0;
   }
     .accordion__inner-list {
@@ -977,7 +1001,8 @@
         max-width: 100%;
     }
     .catalog-time__data {
-        margin-bottom: 14px;
+        margin-bottom: 16px;
+        font-size: 13px;
     }
     .events {
         margin-bottom: 43px;
@@ -1026,24 +1051,38 @@
         margin-bottom: 10px;
     }
     .project__par {
-      font-size: 16px;
-        padding-bottom: 50px;
+      font-size: 17px;
+        padding-bottom: 53px;
         letter-spacing: 0;
     }
+    .project__title {
+      margin-bottom: 12px;
+  }
+    .projects__link-inner-tablet {
+      display: none;
+    }
+    .projects__link-inner-mobile {
+      position: relative;
+      display: block;
+      z-index: 10;
+  }
     .contacts__title {
         font-weight: 600;
         font-size: 18px;
         line-height: 25px;
-        padding-bottom: 3px;
+        padding-bottom: 1px;
+    }
+    .catalog-time__name {
+      margin-bottom: 4px;
     }
     .pro-button-next, .pro-button-prev {
       top: 63%;
   }
     .label__contacts {
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
     .contacts__par {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 19px;
     }
     .contacts__block {
