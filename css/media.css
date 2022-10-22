@@ -68,14 +68,14 @@
         display: none;
     }
     .hero__title {
-        font-size: 78px;
+        font-size: 72px;
         line-height: 98px;
         margin-bottom: -1px;
     }
     .hero__par {
         margin-top: -10px;
         margin-bottom: 155px;
-        font-size: 19px;
+        font-size: 18px;
 
     }
     .header__out {
@@ -119,8 +119,8 @@
         cursor: pointer;
     }
     .hero__bth {
-      font-size: 19px;
-      padding: 24px 33px;
+      font-size: 18px;
+      padding: 23px 34px;
     }
     .header__out-burger:hover {
         background-color: var(--amethysta);
@@ -280,7 +280,7 @@
     }
     .contacts__form {
         flex-direction: row;
-        margin-bottom: 27px;
+        margin-bottom: 32px;
     }
     .accordion__icon-none {
         width: 173px;
@@ -299,7 +299,7 @@
         margin-bottom: 13.5px;
     }
     .accordion__content-wrap {
-        padding: 32px 0 21px;
+        padding: 34px 0 21px;
     }
     .accordion__heading {
         padding: 42px 50px 40px 0;
@@ -354,7 +354,7 @@
         margin-bottom: 81px;
     }
     .catalog__par {
-      font-size: 17px;
+        font-size: 16px;
         line-height: 32px;
         margin-bottom: 39px;
     }
@@ -363,6 +363,7 @@
     }
     .catalog-time__data {
         margin-bottom: 17px;
+        font-size: 12px;
     }
     .catalog-time__content {
       letter-spacing: 0;
@@ -402,7 +403,7 @@
       margin-bottom: 14px;
     }
     .project__par {
-      font-size: 16.9px;
+      font-size: 16px;
         padding-bottom: 20px;
     }
     .cont-cont {
@@ -415,12 +416,13 @@
         font-size: 14px;
     }
     .contacts__title {
-        padding-bottom: 1px;
+        padding-bottom: 0px;
+        margin: 0;
     }
     .contacts__bth {
         max-width: 343px;
-        font-size: 20px;
-        padding: 12px 46px;
+        font-size: 19px;
+        padding: 12px 20px 12px 26px;
     }
     .mySwiperP {
         max-width: 89%;
@@ -520,7 +522,7 @@
         margin-bottom: 70px;
     }
     .about-us__par {
-      font-size: 17px;
+      font-size: 16px;
     }
     .gallery {
         background-image: url(../img/gallery768.jpg);
@@ -587,13 +589,16 @@
       margin-bottom: 12.7px;
       font-size: 17px;
   }
+  .accordion__content-wrap {
+    padding: 34px 0 18px;
+}
     .accordion__inner-list {
         column-count: 3;
         max-height: 100%;
         height: 288px;
     }
     .catalog__img {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
     .catalog-time__data {
         margin-bottom: 7px;
@@ -602,7 +607,7 @@
         bottom: 46px;
     }
     .events__title-card {
-      font-size: 25.3px;
+      font-size: 24px;
     }
     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -625,7 +630,7 @@
         height: 106px;
     }
     .project__par {
-      font-size: 17px;
+        font-size: 16px;
         padding-bottom: 31px;
     }
     .project__subtitle {
@@ -650,12 +655,12 @@
         margin-right: 20px;
     }
     .contacts__form {
-        margin-bottom: 28px;
+        margin-bottom: 30px;
         min-width: 100%;
     }
     .contacts__bth {
         max-width: 49%;
-        font-size: 19px;
+        font-size: 20px;
         padding: 9px 26px;
         min-width: 48%;
     }
@@ -663,10 +668,11 @@
       margin-bottom: 24px;
   }
   .contacts__title {
+    margin-bottom: 4px;
     line-height: 28px;
 }
 .contacts__par {
-  font-size: 15px;
+  font-size: 14px;
 }
     .modal--1,
     .modal--2 {
@@ -802,7 +808,7 @@
         align-items: center;
     }
     .hero__title {
-        font-size: 34px;
+        font-size: 32px;
         line-height: 44px;
         text-align: center;
         padding-bottom: 13px;
@@ -882,7 +888,7 @@
         line-height: 28px;
     }
     .about-us__par {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 28px;
         letter-spacing: 0;
     }
@@ -897,6 +903,9 @@
     .slider__bth {
       padding-top: 45px;
       margin-bottom: 21px;
+    }
+    .tabs-nav__bth-first {
+      font-size: 16px;
     }
     .mySwiperG {
         display: flex;
@@ -915,7 +924,7 @@
         margin-bottom: 12px;
     }
     .catalog-time__content {
-      font-size: 17px;
+      font-size: 16px;
       letter-spacing: 0;
   }
     .accordion__inner-list {
@@ -987,7 +996,7 @@
         margin-bottom: 0px;
     }
     .accordion__item {
-        margin-bottom: 16px;
+        margin-bottom: 15.2px;
         line-height: 16px;
     }
     .accordion__inner-list {
@@ -1051,7 +1060,7 @@
         margin-bottom: 10px;
     }
     .project__par {
-      font-size: 17px;
+      font-size: 16px;
         padding-bottom: 53px;
         letter-spacing: 0;
     }
@@ -1082,7 +1091,7 @@
         margin-bottom: 18px;
     }
     .contacts__par {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 19px;
     }
     .contacts__block {
