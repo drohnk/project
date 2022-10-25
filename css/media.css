@@ -163,6 +163,7 @@
     }
     .events__navigation {
         display: flex;
+        cursor: pointer;
         margin-right: auto;
         margin-left: auto;
         top: 30px;
