@@ -333,8 +333,7 @@
     max-width: 280px;
   }
   .gallery__select-text {
-    letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .gallery__container {
     padding: 0;
@@ -344,7 +343,7 @@
     min-height: 38px;
   }
   .choices__list--single .choices__item {
-    font-size: 17px;
+    font-size: 16px;
   }
   .gallery__checkbox {
     padding-bottom: 33px;
@@ -420,9 +419,10 @@
     margin: 0;
   }
   .contacts__bth {
-    max-width: 343px;
-    font-size: 19px;
-    padding: 12px 20px 12px 26px;
+    max-width: 349px;
+    min-width: 39%;
+    font-size: 18px;
+    padding: 14px 24px 9px 24px;
   }
   .mySwiperP {
     max-width: 89%;
@@ -661,8 +661,8 @@
   }
   .contacts__bth {
     max-width: 49%;
-    font-size: 20px;
-    padding: 9px 26px;
+    font-size: 18px;
+    padding: 10px 15px;
     min-width: 48%;
   }
   .contacts__left {
