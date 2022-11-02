@@ -1774,12 +1774,6 @@ body {
   transition: border-bottom 0.3s ease;
 }
 
-.tabs-nav__bth:active {
-  color: var(--color-E1);
-  transition: color 0.3s ease;
-  outline: none;
-}
-
 .tabs-item {
   display: none;
 }
