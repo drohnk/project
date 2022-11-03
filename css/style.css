@@ -1329,10 +1329,10 @@ body {
 
 .gallery__slide {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
   font-size: 0;
   border: none;
   background-color: transparent;
+  height: 100%;
 }
 
 .gallery__slide:focus-visible:not(:hover):not(:active) {
@@ -1347,9 +1347,9 @@ body {
   content: "";
   position: absolute;
   top: 7%;
-  left: 15%;
+  left: 9%;
   bottom: 7%;
-  right: 15%;
+  right: 5%;
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(../img/gallery+.svg);
   background-position: center;
@@ -1358,7 +1358,6 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  position: absolute;
 }
 
 .gallery__slide:hover.gallery__slide::before,

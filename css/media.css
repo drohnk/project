@@ -48,6 +48,7 @@
     padding: 0;
     padding: 0 50px;
   }
+
   .header__logo {
     background-image: url(../img/Лого-1024.svg);
     width: 100%;
@@ -316,10 +317,10 @@
   .gallery__slide::before {
     content: "";
     position: absolute;
-    top: 7%;
-    left: 7%;
-    bottom: 7%;
-    right: 7%;
+    top: 10%;
+    left: 10%;
+    bottom: 10%;
+    right: 5%;
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../img/gallery+.svg);
     background-position: center;
@@ -328,7 +329,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  }
+}
   .gallery__slid {
     max-width: 280px;
   }
